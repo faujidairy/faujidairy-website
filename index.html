@@ -1,127 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fauji Dairy - Dhara Gold Milk</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fauji Dairy – Dhara Gold Milk</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: white;
     }
-    header {
-      background: #004080;
-      color: #fff;
-      padding: 20px 40px;
+
+    .container {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?milk,dairy') no-repeat center center;
-      background-size: cover;
-      padding: 100px 40px;
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
-      text-align: center;
-    }
-    .section {
-      padding: 60px 40px;
       max-width: 1200px;
       margin: auto;
-    }
-    .products img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
-      margin: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-    footer {
-      background: #004080;
-      color: #fff;
-      text-align: center;
       padding: 20px;
+    }
+
+    .logo {
+      width: 180px;
+      margin: 30px 0;
+    }
+
+    .product-banner {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="logo.png" alt="Dhara Gold Milk Logo" class="logo">
 
-<header>
-  <div><strong>Dhara Gold Milk</strong></div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#distributors">Distributors</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>धारा अमृताची, हमी शुद्धतेची</h1>
-  <p>Premium Dairy Products by Fauji Dairy</p>
-</section>
-
-<section class="section" id="about">
-  <h2>About Us</h2>
-  <p>Fauji Dairy is committed to delivering fresh and pure dairy products under the Dhara Gold Milk brand. With FSSAI certification and a focus on quality, we aim to serve Maharashtra and beyond.</p>
-</section>
-
-<section class="section products" id="products">
-  <h2>Our Products</h2>
-  <ul>
-    <li><strong>Curd:</strong> 200g, 1kg, 5kg (Retail & Bulk)</li>
-    <li><strong>Paneer:</strong> 200g, 500g, 1kg (Retail), 5kg (Bulk)</li>
-    <li><strong>Lassi:</strong> 200ml (Retail & Bulk)</li>
-    <li><strong>Taak:</strong> 500ml, 1L (Retail & Bulk)</li>
-    <li><strong>Ghee:</strong> 500ml, 1kg (Retail)</li>
-  </ul>
-  <div style="display:flex; flex-wrap:wrap;">
-    <img src="https://source.unsplash.com/200x200/?curd" alt="Curd">
-    <img src="https://source.unsplash.com/200x200/?paneer" alt="Paneer">
-    <img src="https://source.unsplash.com/200x200/?lassi" alt="Lassi">
-    <img src="https://source.unsplash.com/200x200/?buttermilk" alt="Taak">
-    <img src="https://source.unsplash.com/200x200/?ghee" alt="Ghee">
+    <!-- Milk Product Image -->
+    <img src="milk1.jpg" alt="Dhara Milk Bottle" class="product-banner">
   </div>
-</section>
-
-<section class="section" id="distributors">
-  <h2>Become a Distributor</h2>
-  <p>We are expanding rapidly. If you're interested in distributing our products, contact us today. Currently serving Pune & Shirur — growing across Maharashtra.</p>
-</section>
-
-<section class="section contact-form" id="contact">
-  <h2>Contact Us</h2>
-  <form action="mailto:info@faujidairy.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-    <input type="submit" value="Send">
-  </form>
-</section>
-
-<section class="section">
-  <h2>Our Location</h2>
-  <iframe src="https://maps.google.com/maps?q=18.653004488220024,74.37243023793079&z=15&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
-
-<footer>
-  <p>&copy; 2025 Fauji Dairy. All rights reserved. | Follow us: Facebook | Instagram</p>
-</footer>
-
 </body>
 </html>
