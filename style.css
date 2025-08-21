@@ -38,7 +38,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Devanagari", sans-serif;
+  font-family: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   font-size:var(--fs-body);
   line-height:var(--lh-body);
   color:var(--ink);
@@ -63,6 +63,7 @@ a:hover{color:var(--brand-gold)}
   margin:0 0 var(--space-3);
   color:var(--brand-deep);
   letter-spacing:.2px;
+  font-family: 'Montserrat', sans-serif;
 }
 .section-sub{color:var(--muted); margin:0 0 var(--space-5)}
 .grid{display:grid; gap:var(--space-4)}
@@ -70,6 +71,7 @@ a:hover{color:var(--brand-gold)}
   display:inline-block; padding:12px 18px; border-radius:999px;
   font-weight:600; text-decoration:none; border:1px solid transparent; transition:.2s;
   letter-spacing:.2px;
+  font-family: 'Montserrat', sans-serif;
 }
 .btn-primary{background:var(--brand-gold); color:#111}
 .btn-primary:hover{background:var(--brand-gold-dk)}
@@ -109,6 +111,7 @@ a:hover{color:var(--brand-gold)}
 .brand-name{
   font-weight:700; letter-spacing:.2px;
   font-size:clamp(18px, 2vw, 20px);
+  font-family: 'Montserrat', sans-serif;
 }
 .brand-name strong{color:var(--brand-gold)}
 
@@ -118,7 +121,10 @@ a:hover{color:var(--brand-gold)}
   border-radius:8px; padding:6px 10px; font-size:18px;
 }
 .nav-menu{display:flex; gap:22px; list-style:none; padding:0; margin:0}
-.nav-menu a{text-decoration:none; color:#1f2937; font-weight:600}
+.nav-menu a{
+  text-decoration:none; color:#1f2937; font-weight:600;
+  font-family: 'Montserrat', sans-serif;
+}
 .nav-menu a:hover{color:var(--brand-gold)}
 @media (max-width:840px){
   .nav-toggle{display:block}
@@ -137,14 +143,15 @@ a:hover{color:var(--brand-gold)}
 }
 .tagline{
   margin:0 0 8px; color:#8a6d1d; font-weight:600;
-  font-family:"Noto Sans Devanagari", Poppins, sans-serif;
+  font-family:'Montserrat', sans-serif;
 }
-.font-dev{font-family:"Noto Sans Devanagari", Poppins, sans-serif}
+.font-dev{font-family:"Noto Sans Devanagari", 'Montserrat', sans-serif}
 .hero h1{
   font-size:var(--fs-h1);
   line-height:var(--lh-tight);
   margin:0 0 var(--space-2);
   letter-spacing:.2px;
+  font-family:'Montserrat', sans-serif;
 }
 .hero .sub{color:var(--muted); margin:0 0 var(--space-4)}
 .cta-row{display:flex; gap:12px; flex-wrap:wrap}
@@ -169,6 +176,7 @@ a:hover{color:var(--brand-gold)}
   margin:0 0 6px;
   font-size:var(--fs-h3);
   line-height:var(--lh-tight);
+  font-family:'Montserrat', sans-serif;
 }
 @media (max-width:900px){
   .products-grid{grid-template-columns:repeat(2,1fr)}
@@ -216,7 +224,7 @@ a:hover{color:var(--brand-gold)}
 .site-footer{border-top:1px solid #f2efe6; background:#fff}
 .footer-inner{display:flex; justify-content:space-between; gap:var(--space-4); padding:24px 0; align-items:flex-start}
 .footer-links{list-style:none; padding:0; margin:0; display:grid; gap:8px}
-.footer-links a{text-decoration:none; color:#1f2937}
+.footer-links a{text-decoration:none; color:#1f2937; font-family:'Montserrat', sans-serif}
 .footer-links a:hover{color:var(--brand-gold)}
 @media (max-width:720px){
   .footer-inner{flex-direction:column}
