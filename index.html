@@ -1,70 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhara Gold Milk</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhara Gold Milk — Pure. Fresh. Healthy.</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Dhara Gold Milk by Fauji Dairy: pure, fresh dairy — milk, curd, paneer, ghee, lassi, taak. FSSAI licensed. Serving Pune and expanding nationwide.">
+  <link rel="canonical" href="https://faujidairy.com/">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dhara Gold Milk — Pure. Fresh. Healthy.">
+  <meta property="og:description" content="Premium dairy products from Fauji Dairy. FSSAI licensed.">
+  <meta property="og:url" content="https://faujidairy.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Dhara Gold Milk Logo" class="logo">
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Dhara Gold Milk home">
+        <span class="brand-name">Dhara <strong>Gold Milk</strong></span>
+      </a>
 
-    <!-- Banner -->
-    <img src="banner.png" alt="Milk Banner" class="product-banner">
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why">Why Dhara</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Products Section -->
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="milk.png" alt="Milk">
-        <p>Fresh Milk</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="tagline font-dev">धारा अमृताची, हमी शुद्धतेची</p>
+        <h1>Pure. Fresh. Healthy.</h1>
+        <p class="sub">Premium dairy products crafted with care and delivered with trust.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#products">View Products</a>
+          <a class="btn btn-ghost" href="mailto:info@faujidairy.com">Email Us</a>
+        </div>
+        <div class="trust-row">
+          <span class="badge">FSSAI Licensed</span>
+          <span class="divider"></span>
+          <span class="note">Serving Pune • Expanding nationwide</span>
+        </div>
       </div>
-      <div class="product-card">
-        <img src="curd.png" alt="Curd">
-        <p>Curd</p>
-      </div>
-      <div class="product-card">
-        <img src="paneer.png" alt="Paneer">
-        <p>Paneer</p>
-      </div>
-      <div class="product-card">
-        <img src="lassi.png" alt="Lassi">
-        <p>Lassi</p>
-      </div>
-      <div class="product-card">
-        <img src="ghee.png" alt="Ghee">
-        <p>Ghee</p>
+      <div class="hero-figure placeholder-xl" aria-hidden="true">
+        <span>Hero image placeholder</span>
       </div>
     </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Us</h2>
-      <p>
-        Dhara Gold Milk brings you the purest and freshest dairy products, sourced directly from our farms. 
-        We take pride in delivering quality and nutrition for your family every day.
-      </p>
+  <main id="main">
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-sub">Farm-fresh dairy you can trust. Images will be added next.</p>
+
+        <div class="grid products-grid">
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Milk</h3>
+            <p>Fresh, nutritious milk for every household.</p>
+          </article>
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Curd</h3>
+            <p>Thick, creamy and naturally set.</p>
+          </article>
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Paneer</h3>
+            <p>Soft, fresh and perfect for your recipes.</p>
+          </article>
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Ghee</h3>
+            <p>Traditional aroma, rich and pure.</p>
+          </article>
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Lassi</h3>
+            <p>Refreshing and delightful.</p>
+          </article>
+          <article class="card">
+            <div class="thumb placeholder-md"></div>
+            <h3>Taak</h3>
+            <p>Light, cooling buttermilk.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <p>Email: info@faujidairy.com</p>
-      <p>Phone: +91 9849804513</p>
+    <!-- Why Choose Dhara -->
+    <section id="why" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Why Choose Dhara</h2>
+        <div class="grid features-grid">
+          <div class="feature">
+            <div class="icon" aria-hidden="true">💧</div>
+            <h3>Purity First</h3>
+            <p>Quality checks at every step to keep it clean and safe.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">❄️</div>
+            <h3>Cold Chain</h3>
+            <p>Chilled logistics preserve freshness from plant to shelf.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">👨‍🌾</div>
+            <h3>Farmer Sourced</h3>
+            <p>Ethically sourced milk supporting local farmers.</p>
+          </div>
+          <div class="feature">
+            <div class="icon" aria-hidden="true">🧪</div>
+            <h3>FSSAI Licensed</h3>
+            <p>Manufactured under strict food safety standards.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      &copy; 2025 Dhara Gold Milk. All rights reserved.
-    </footer>
-  </div>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-split">
+        <div>
+          <h2 class="section-title">About Fauji Dairy</h2>
+          <p>
+            Dhara Gold Milk is the flagship brand of Fauji Dairy. We produce high-quality milk
+            and milk products with a focus on hygiene, taste and trust. From Shirur (Pune Rural),
+            we are expanding our footprint across India.
+          </p>
+          <ul class="checks">
+            <li>Modern plant processes</li>
+            <li>Consistent quality assurance</li>
+            <li>Reliable supply and distribution</li>
+          </ul>
+        </div>
+        <div class="about-visual placeholder-lg" aria-hidden="true"><span>Brand visual placeholder</span></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Reach Us</h3>
+            <p><strong>Phone:</strong> <a href="tel:+919849804513">+91 9849804513</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@faujidairy.com">info@faujidairy.com</a></p>
+            <p><strong>Location:</strong> Shirur (Pune Rural), Pune</p>
+            <p><a class="btn btn-small" target="_blank" rel="noopener" href="https://maps.google.com/?q=18.653004488220024,74.37243023793079">View on Google Maps</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Business Hours</h3>
+            <p>Mon–Sat: 7:00 AM – 7:00 PM</p>
+            <p>Sun: 8:00 AM – 1:00 PM</p>
+            <p class="muted">Timings can vary on holidays.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Dhara <strong>Gold Milk</strong></span>
+        <p class="muted">© 2025 Fauji Dairy. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why">Why Dhara</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:info@faujidairy.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fauji Dairy - Dhara Gold Milk",
+    "url": "https://faujidairy.com/",
+    "email": "info@faujidairy.com",
+    "telephone": "+91 9849804513",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Shirur (Pune Rural)",
+      "addressRegion": "MH",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <!-- JS: mobile menu + sticky header + smooth scroll -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 8);
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
 </body>
 </html>
