@@ -29,8 +29,8 @@
   /* Type scale (fluid) */
   --fs-body:clamp(16px, 1.4vw, 18px);
   --fs-small:0.9375rem;         /* ~15px */
-  --fs-h1:clamp(28px, 4vw, 48px);
-  --fs-h2:clamp(22px, 3vw, 34px);
+  --fs-h1:clamp(32px, 4.5vw, 52px);
+  --fs-h2:clamp(24px, 3.2vw, 36px);
   --fs-h3:clamp(18px, 2.2vw, 22px);
   --lh-tight:1.25;
   --lh-body:1.65;
@@ -51,7 +51,7 @@ body{
 }
 
 /* Global links */
-a{color:inherit; text-decoration:none}
+a{color:inherit; text-decoration:none; transition:color .2s ease}
 a:hover{color:var(--brand-gold)}
 
 /* Utility */
@@ -75,37 +75,24 @@ a:hover{color:var(--brand-gold)}
 .grid{display:grid; gap:var(--space-4)}
 .btn{
   display:inline-block; padding:12px 18px; border-radius:999px;
-  font-weight:600; text-decoration:none; border:1px solid transparent; transition:.2s;
+  font-weight:600; text-decoration:none; border:1px solid transparent; transition:all .25s ease;
   letter-spacing:.2px;
   font-family: 'Montserrat', sans-serif;
 }
 .btn-primary{background:var(--brand-gold); color:#111}
-.btn-primary:hover{background:var(--brand-gold-dk)}
+.btn-primary:hover{background:var(--brand-gold-dk); transform:translateY(-2px)}
 .btn-ghost{background:transparent; color:var(--brand-deep); border-color:rgba(31,41,55,.25)}
 .btn-ghost:hover{background:#fff3d6}
 .btn-small{padding:8px 12px; font-size:var(--fs-small)}
 
-/* Placeholders */
-.placeholder-xl,.placeholder-lg,.placeholder-md{
-  background:linear-gradient(135deg,#fff7d9,#ffffff);
-  border:1px dashed rgba(180,150,46,.35);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-sm);
-  display:flex; align-items:center; justify-content:center;
-  color:var(--muted); text-align:center; font-size:var(--fs-small);
-  font-family:'Lato', sans-serif;
+/* Subtle reveal animation */
+.reveal{
+  opacity:0;
+  transform:translateY(20px);
+  animation:fadeUp .8s ease forwards;
 }
-.placeholder-xl{min-height:320px}
-.placeholder-lg{min-height:220px}
-.placeholder-md{min-height:160px}
-
-/* Skip link */
-.skip-link{
-  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
-}
-.skip-link:focus{
-  left:8px; top:8px; width:auto; height:auto; padding:8px 10px; background:#000; color:#fff; z-index:9999;
-  font-family:'Lato', sans-serif;
+@keyframes fadeUp{
+  to{opacity:1; transform:none;}
 }
 
 /* Header */
@@ -133,6 +120,7 @@ a:hover{color:var(--brand-gold)}
   text-decoration:none; color:#1f2937; font-weight:600;
   font-family: 'Montserrat', sans-serif;
   letter-spacing:.2px;
+  transition:color .2s;
 }
 .nav-menu a:hover{color:var(--brand-gold)}
 @media (max-width:840px){
@@ -187,7 +175,7 @@ a:hover{color:var(--brand-gold)}
   border:1px solid #f2efe6;
   font-family:'Lato', sans-serif;
 }
-.card:hover{transform:translateY(-3px); box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-4px); box-shadow:var(--shadow)}
 .card .thumb{margin-bottom:12px}
 .card h3{
   margin:0 0 6px;
@@ -209,7 +197,9 @@ a:hover{color:var(--brand-gold)}
   text-align:left; background:var(--surface); padding:var(--space-4); border-radius:var(--radius);
   box-shadow:var(--shadow-sm); border:1px solid #f2efe6;
   font-family:'Lato', sans-serif;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
+.feature:hover{transform:translateY(-4px); box-shadow:var(--shadow)}
 .feature .icon{font-size:28px; margin-bottom:8px}
 @media (max-width:900px){
   .features-grid{grid-template-columns:repeat(2,1fr)}
@@ -242,13 +232,16 @@ a:hover{color:var(--brand-gold)}
 
 /* Footer */
 .site-footer{border-top:1px solid #f2efe6; background:#fff}
-.footer-inner{display:flex; justify-content:space-between; gap:var(--space-4); padding:24px 0; align-items:flex-start}
+.footer-inner{
+  display:flex; justify-content:space-between; gap:var(--space-4);
+  padding:32px 0; align-items:flex-start;
+}
 .footer-links{list-style:none; padding:0; margin:0; display:grid; gap:8px}
 .footer-links a{
   text-decoration:none; color:#1f2937; font-family:'Montserrat', sans-serif;
-  font-weight:500; letter-spacing:.2px;
+  font-weight:500; letter-spacing:.2px; transition:color .2s;
 }
 .footer-links a:hover{color:var(--brand-gold)}
 @media (max-width:720px){
-  .footer-inner{flex-direction:column}
+  .footer-inner{flex-direction:column; gap:var(--space-4)}
 }
